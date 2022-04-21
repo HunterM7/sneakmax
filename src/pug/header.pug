@@ -1,11 +1,11 @@
 header.header 
 	.container.grid
-
-		a.logo.header__logo() SneakMax
+		.header__left
+			a.logo.header__logo() SneakMax
 
 		.header__right
 			nav.nav.header__nav
-				ul.nav__list 
+				ul.nav__list.list-reset
 					li.nav__item
 						a(href="#").nav__link Каталог
 					li.nav__item
@@ -19,6 +19,8 @@ header.header
 					li.nav__item
 						a(href="#").nav__link Контакты
 			
-			button.btn-reset.cart.header__cart
-				svg 
-					use(xlink:href="img/sprite.svg#cart")
+			.cart.header__cart
+				button.btn-reset.cart__btn
+					svg 
+						use(xlink:href="img/sprite.svg#cart")
+					.cart__count 1
