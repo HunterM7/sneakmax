@@ -8,10 +8,15 @@ html(lang="en")
 		link(rel="stylesheet", href="css/style.min.css")
 	body 
 		include pug/header
-		main.page 
-			h1 Heading 
-			img(src="@img/logo.png", width="150px" alt="img")
-			span Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe?
+		main.main
+			include pug/hero
+			include pug/catalog
+			include pug/about
+			include pug/quiz
+			include pug/team
+			include pug/faq
+			include pug/contacts
+			include pug/instagram
 		include pug/footer 
 
 		script(src="js/app.min.js") 

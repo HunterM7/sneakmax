@@ -1,2 +1,24 @@
-header 
-	h1 Header
+header.header 
+	.container.grid
+
+		a.logo.header__logo() SneakMax
+
+		.header__right
+			nav.nav.header__nav
+				ul.nav__list 
+					li.nav__item
+						a(href="#").nav__link Каталог
+					li.nav__item
+						a(href="#").nav__link О нас
+					li.nav__item
+						a(href="#").nav__link Подбор товара
+					li.nav__item
+						a(href="#").nav__link Наша команда
+					li.nav__item
+						a(href="#").nav__link Доставка и оплата
+					li.nav__item
+						a(href="#").nav__link Контакты
+			
+			button.btn-reset.cart.header__cart
+				svg 
+					use(xlink:href="img/sprite.svg#cart")
